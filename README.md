@@ -25,7 +25,9 @@ unsigned Windows installer/portable build and a debug-signed Android APK.
 - **Android 8+** — `Lekhok_<version>_android.apk`, or
   `Lekhok_<version>_android-debug.apk` for an unsigned preview.
 
-Every release includes `SHA256SUMS.txt`. Verify a download before installing:
+Preview/stable channels, signing and the compatibility gate are defined in
+[RELEASE-POLICY.md](RELEASE-POLICY.md). Every release includes `SHA256SUMS.txt`.
+Verify a download before installing:
 
 ```powershell
 Get-FileHash .\Lekhok_0.1.0_x64-setup.exe -Algorithm SHA256
