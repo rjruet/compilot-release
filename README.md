@@ -12,8 +12,9 @@ repository is private. Builds are produced by GitHub Actions and attached to
 
 ## Download
 
-Open the [latest release](https://github.com/rjruet/compilot-release/releases/latest)
-and choose:
+Open [Releases](https://github.com/rjruet/compilot-release/releases) and choose
+the newest build. Preview builds are marked **Pre-release**; only a signed build
+that has passed the compatibility gate is stable.
 
 - **Windows 11 x64** — `Lekhok_<version>_x64-setup.exe` (NSIS installer) or
   `Lekhok_<version>_x64-portable.zip`.
