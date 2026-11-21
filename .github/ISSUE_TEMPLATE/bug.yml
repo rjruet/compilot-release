@@ -1,0 +1,70 @@
+name: Bug report
+description: Report an installation or runtime problem in a public Lekhok build.
+title: "[Windows] or [Android] short summary"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include passwords, API keys, private documents, or other secrets.
+        Security problems must use the private channel in SECURITY.md.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - Android
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Lekhok version
+      description: The release tag and asset name you installed.
+      placeholder: v0.1.0-preview, Lekhok_0.1.0_x64-setup.exe
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS version
+      placeholder: Windows 11 23H2 / Android 14
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: App or editor
+      description: For Write-anywhere issues, name the exact app and field.
+      placeholder: Notepad / Gmail in Chrome / Microsoft Word
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Type ...
+        3. Press ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I verified the download with SHA256SUMS.txt.
+        - label: I am not including a password, API key, or private document.
+        - label: I understand this is a preview and compatibility is not guaranteed.
