@@ -16,6 +16,10 @@ Open [Releases](https://github.com/rjruet/compilot-release/releases) and choose
 the newest build. Preview builds are marked **Pre-release**; only a signed build
 that has passed the compatibility gate is stable.
 
+The first preview is
+[v0.1.0-preview](https://github.com/rjruet/compilot-release/releases/tag/v0.1.0-preview):
+unsigned Windows installer/portable build and a debug-signed Android APK.
+
 - **Windows 11 x64** — `Lekhok_<version>_x64-setup.exe` (NSIS installer) or
   `Lekhok_<version>_x64-portable.zip`.
 - **Android 8+** — `Lekhok_<version>_android.apk`, or
