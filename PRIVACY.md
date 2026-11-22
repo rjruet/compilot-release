@@ -10,6 +10,9 @@ Lekhok is designed to keep your writing on your own device.
   has no voice feature and no `INTERNET` permission.
 - The Android keyboard cannot make network calls. It does not declare the
   `INTERNET` permission.
+- The Windows TSF text service runs inside the app that owns the focused text
+  field. It has no network client compiled in, no telemetry, and no global
+  keyboard hook; it sees TSF key events only while its profile is active.
 
 ## What can leave the device
 
@@ -32,9 +35,10 @@ Credential Manager and is never written to the profile or a URL.
 
 ## Learning data
 
-The desktop profile is a local JSON file under the app's data directory. The
-Android profile is local `SharedPreferences` data. A future release may add
-encrypted export; until then, no profile is uploaded automatically.
+The desktop profile is a portable local JSON file under the app's data
+directory. The Android profile is the same schema in the app's private files
+directory, written atomically. A future release may add encrypted export; until
+then, no profile is uploaded automatically.
 
 ## Updates
 
